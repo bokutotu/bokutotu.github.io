@@ -1,16 +1,40 @@
 ---
+import { marked } from 'marked';
 
+const markdownContent = `
+# Portfolio
+
+I'm Hikaru Kondou, a passionate developer.
+
+Connect with:
+- 🐙 [GitHub](https://github.com/bokutotu)
+- ✒️ [Zenn](https://zenn.dev/)
+- 💼 [LinkedIn](https://linkedin.com)
+- ✉️ Email: mushin.hudoushin@gmail.com
+
+## Education & Career
+
+🎓 **Undergraduate:** Tohoku University, School of Engineering, Department of Electronic, Information and Physical Engineering  
+🎓 **Graduate:** Tohoku University, Graduate School of Information Sciences
+
+💼 **Current Employer:** Parakeet, inc
+
+💻 **Technologies:** Rust, tauri, React, hono, and TypeScript
+
+🤖 **Project:** [github.com/bokutotu/zenu](https://github.com/bokutotu/zenu) deep learning framework.
+`;
+
+const htmlContent = marked.parse(markdownContent);
 ---
-
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>Portfolio</title>
 	</head>
 	<body>
-		<h1>Astro</h1>
+		<article set:html={htmlContent} />
 	</body>
 </html>
