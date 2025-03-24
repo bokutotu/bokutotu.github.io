@@ -1,3 +1,6 @@
+---
+/* Astro 用の .astro ファイルです */
+---
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -79,6 +82,17 @@
         padding: 20px 0;
         font-size: 0.9rem;
       }
+      /* 箇条書きやセクション内の見出し用の追加スタイル（任意） */
+      article h3, article h4 {
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
+        font-size: 1.2rem;
+      }
+      ul {
+        list-style-type: disc;
+        margin-left: 1.5rem;
+        margin-bottom: 1rem;
+      }
     </style>
   </head>
   <body>
@@ -87,15 +101,18 @@
       <nav>
         <a href="https://github.com/bokutotu" target="_blank">GitHub</a>
         <a href="https://zenn.dev/" target="_blank">Zenn</a>
-        <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+        <a href="https://www.linkedin.com/in/hikaru-kondo-50b7ab187/" target="_blank">LinkedIn</a>
         <a href="mailto:mushin.hudoushin@gmail.com">Email</a>
       </nav>
     </header>
     <main>
+      <!-- About Me -->
       <section>
         <h2>About Me</h2>
         <p>I'm Hikaru Kondou, a passionate developer.</p>
       </section>
+
+      <!-- Education & Career -->
       <section>
         <h2>Education & Career</h2>
         <div>
@@ -108,6 +125,8 @@
           <p><strong>Current Employer:</strong> Parakeet, inc</p>
         </div>
       </section>
+
+      <!-- Technologies -->
       <section>
         <h2>Technologies</h2>
         <div class="tech-icons">
@@ -157,6 +176,8 @@
           </a>
         </div>
       </section>
+
+      <!-- Project -->
       <section>
         <h2>Project</h2>
         <p>
@@ -164,6 +185,113 @@
             github.com/bokutotu/zenu
           </a> deep learning framework.
         </p>
+      </section>
+
+      <!-- Work Experience (English) -->
+      <section>
+        <h2>Work Experience</h2>
+
+        <!-- ax Inc. -->
+        <article>
+          <h3>ax Inc.</h3>
+          <p><strong>Employment Period:</strong> October 2022 – September 2024</p>
+          <p><strong>Business:</strong> Deep learning consulting and application development</p>
+          <p><strong>Founded:</strong> 2018</p>
+          <p><strong>Capital:</strong> 352 million JPY</p>
+          <p><strong>Employees:</strong> 50</p>
+        </article>
+
+        <!-- Project 1 -->
+        <article>
+          <h4>Project 1 (April 2024 – July 2024): Game Voice Verification Tool</h4>
+          <p><strong>Role:</strong> Software Engineer / Machine Learning Engineer</p>
+          <p><strong>Technologies:</strong> Python, Whisper, Torch, Hugging Face, ESPnet</p>
+          <p><strong>Overview:</strong> Developed a voice verification tool for a game production company to check if recorded voice lines match the original script. This project addressed challenging short utterances like “Uwa—!” or “Yaa—!”, which are difficult to recognize using conventional speech recognition systems.</p>
+          <ul>
+            <li>
+              <strong>Improved Speech Recognition Accuracy:</strong>  
+              Fine-tuned a Whisper-based model using katakana-only datasets. Recognition accuracy improved to ~96% for typical lines, and short exclamations like “Uwa—!” reached ~50%.
+            </li>
+            <li>
+              <strong>Handling Inconsistent Data:</strong>  
+              Proposed a workflow to flag uncertain transcriptions and created an auto-standardization tool, reducing manual correction time.
+            </li>
+            <li>
+              <strong>Training Scripts:</strong>  
+              Delivered scripts that allow fine-tuning with proprietary data, enabling clients to re-train the model with their own datasets.
+            </li>
+          </ul>
+          <p><strong>Team Structure:</strong> 1 Project Manager, 1 Sales Representative, and 1 Engineer (yourself).</p>
+        </article>
+
+        <!-- Project 2 -->
+        <article>
+          <h4>Project 2 (October 2023 – Present): DX Application Development</h4>
+          <p><strong>Role:</strong> Software Engineer</p>
+          <p><strong>Technologies:</strong> Flutter 3.19.6, C++17</p>
+          <p><strong>Overview:</strong> Contributed to the development of a DX application using the in-house ONNX runtime called “ailia.” Major achievements included creating an OCR library from scratch and implementing a meeting minutes feature.</p>
+          <ul>
+            <li>
+              <strong>OCR Library Development:</strong>  
+              Built an OCR library from the ground up, including image preprocessing, without relying on libraries like OpenCV (to avoid large binary sizes). Achieved efficient and high-quality image processing while meeting strict size constraints.
+            </li>
+            <li>
+              <strong>Meeting Minutes Feature:</strong>  
+              Utilized Flutter’s isolate functionality for parallel processing and implemented responsive state management with ChangeNotifier.
+            </li>
+          </ul>
+          <p><strong>Team & Role:</strong> A total of 15 engineers on the project; you served as both an implementation engineer and a code reviewer.</p>
+        </article>
+
+        <!-- Project 3 -->
+        <article>
+          <h4>Project 3 (September 2022 – November 2022): ailia Development</h4>
+          <p><strong>Role:</strong> Software Engineer</p>
+          <p><strong>Technologies:</strong> C++17</p>
+          <p><strong>Overview:</strong> Implemented previously unsupported layers for the in-house ONNX runtime “ailia.”</p>
+        </article>
+
+        <!-- Project 4 -->
+        <article>
+          <h4>Project 4 (November 2022 – December 2022): Rust Binding for ailia</h4>
+          <p><strong>Role:</strong> Software Engineer</p>
+          <p><strong>Technologies:</strong> Rust</p>
+          <p><strong>Overview:</strong> Created Rust bindings for “ailia,” the company’s proprietary ONNX runtime.</p>
+        </article>
+
+        <!-- Tosho Inc. -->
+        <article>
+          <h3>Tosho Inc.</h3>
+          <p><strong>Employment Period:</strong> March 2024 – Present</p>
+          <p><strong>Business:</strong> Deep learning consulting and application development</p>
+          <p><strong>Founded:</strong> 1971</p>
+          <p><strong>Capital:</strong> 1,000 million JPY</p>
+          <p><strong>Employees:</strong> 622</p>
+        </article>
+
+        <!-- Medication Verification Tool -->
+        <article>
+          <h4>Project (March 2024 – Present): Medication Verification Tool</h4>
+          <p><strong>Position:</strong> Contract-based / Machine Learning Engineer</p>
+          <p><strong>Technologies:</strong> Python, PyTorch</p>
+          <p><strong>Overview:</strong> Developing a software tool to verify if medications match prescriptions before packaging.</p>
+          <ul>
+            <li>
+              <strong>Medication Recognition System:</strong>  
+              Used instance segmentation to handle a large and growing variety of medications. Achieved over 95% accuracy, significantly improving workflow efficiency.
+            </li>
+            <li>
+              <strong>Code Management Improvements:</strong>  
+              Introduced GitHub for version control, enhancing collaboration and visibility.
+            </li>
+          </ul>
+          <p><strong>Team Structure:</strong> 1 Project Manager, 1 Machine Learning Engineer (yourself).</p>
+          <p><strong>Challenges & Solutions:</strong></p>
+          <ul>
+            <li><strong>Challenge:</strong> The huge variety of medications and overlapping pills made direct classification impractical.</li>
+            <li><strong>Solution:</strong> Implemented instance segmentation for shape and color extraction, then matched to a database. Future plans include OCR for pill text and overlap detection to further boost accuracy.</li>
+          </ul>
+        </article>
       </section>
     </main>
     <footer>
