@@ -138,6 +138,7 @@
       <section>
         <h2>About Me</h2>
         <p>I'm Hikaru Kondou. I have a strong preference for Rust programming language and am particularly interested in deep learning acceleration and high-performance computing (SIMD, CUDA).</p>
+        <p>I am currently focused on CTO / Tech Lead roles, with an emphasis on technical leadership, delivery execution, and engineering process design.</p>
       </section>
 
       <!-- Work Experience (English) -->
@@ -155,6 +156,82 @@
             <tr>
               <th>Business</th>
               <td>Software development, voice conversion technology</td>
+            </tr>
+            <tr>
+              <th>Position</th>
+              <td>Chief Technology Officer (CTO)</td>
+            </tr>
+          </table>
+        </article>
+
+        <!-- Speech Platform & Dubbing App -->
+        <article>
+          <div class="project-title">Project: TTS/ASR Web APIs & Dubbing Web Application (PoC)</div>
+          <table class="project-table">
+            <tr>
+              <th>Role</th>
+              <td>CTO / Tech Lead</td>
+            </tr>
+            <tr>
+              <th>Technologies</th>
+              <td>Haskell (Servant, effectful), Terraform, Rust, Python, Next.js, Kubernetes, Argo Workflows, PostgreSQL, Google Cloud</td>
+            </tr>
+            <tr>
+              <th>Overview</th>
+              <td>
+                Leading end-to-end development of TTS/ASR Web APIs and a dubbing web application in the PoC phase, including architecture, implementation, and production-oriented operations on Google Cloud.
+              </td>
+            </tr>
+            <tr>
+              <th>Responsibilities</th>
+              <td>
+                <ul>
+                  <li>
+                    <strong>API Development:</strong> Designed and implemented TTS/ASR APIs with Haskell, Rust, and Python for practical product use cases.
+                  </li>
+                  <li>
+                    <strong>Backend & Frontend:</strong> Built backend services with Haskell Servant and frontend features with Next.js.
+                  </li>
+                  <li>
+                    <strong>Model Serving:</strong> Operated in-house model serving pipelines on Kubernetes with Argo Workflows.
+                  </li>
+                  <li>
+                    <strong>Cloud Infrastructure:</strong> Managed infrastructure on Google Cloud using Terraform.
+                  </li>
+                  <li>
+                    <strong>Engineering Leadership:</strong> Led performance evaluation and standardized development processes, including team-wide adoption of TDD and Haskell-based implementation practices.
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>Engineering Approach</th>
+              <td>
+                <ul>
+                  <li>
+                    <strong>Effect System:</strong> Adopted the <code>effectful</code> effect system to keep effects explicit and business logic testable.
+                  </li>
+                  <li>
+                    <strong>Type-driven Development:</strong> Used type design as a primary tool to model domain constraints and prevent runtime bugs.
+                  </li>
+                  <li>
+                    <strong>Test-driven Development:</strong> Applied TDD to critical flows such as API contracts and data access paths.
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>Performance Optimization</th>
+              <td>
+                <ul>
+                  <li>
+                    <strong>Database Performance:</strong> Eliminated N+1 query issues and improved major DB access latency from around 300 msec to below 100 msec.
+                  </li>
+                  <li>
+                    <strong>Waveform Rendering:</strong> Optimized waveform data flow and rendering strategy, reducing display time from about 1 minute to around 2 seconds.
+                  </li>
+                </ul>
+              </td>
             </tr>
           </table>
         </article>
@@ -476,7 +553,35 @@
           <a href="https://www.python.org" target="_blank">
             <i class="devicon-python-plain colored" style="font-size: 48px;"></i>
           </a>
+          <!-- Haskell -->
+          <a href="https://www.haskell.org" target="_blank">
+            <i class="devicon-haskell-plain colored" style="font-size: 48px;"></i>
+          </a>
+          <!-- Terraform -->
+          <a href="https://www.terraform.io" target="_blank">
+            <i class="devicon-terraform-plain colored" style="font-size: 48px;"></i>
+          </a>
+          <!-- Next.js -->
+          <a href="https://nextjs.org" target="_blank">
+            <i class="devicon-nextjs-original" style="font-size: 48px;"></i>
+          </a>
+          <!-- Kubernetes -->
+          <a href="https://kubernetes.io" target="_blank">
+            <i class="devicon-kubernetes-plain colored" style="font-size: 48px;"></i>
+          </a>
+          <!-- PostgreSQL -->
+          <a href="https://www.postgresql.org" target="_blank">
+            <i class="devicon-postgresql-plain colored" style="font-size: 48px;"></i>
+          </a>
+          <!-- Google Cloud -->
+          <a href="https://cloud.google.com" target="_blank">
+            <i class="devicon-googlecloud-plain colored" style="font-size: 48px;"></i>
+          </a>
         </div>
+        <p>
+          <strong>Additional Stack:</strong>
+          Haskell, Servant, effectful, Terraform, Kubernetes, Argo Workflows, Next.js, PostgreSQL, Google Cloud, Rust, Python
+        </p>
       </section>
 
       <!-- Project -->
@@ -510,4 +615,3 @@
     </footer>
   </body>
 </html>
-
